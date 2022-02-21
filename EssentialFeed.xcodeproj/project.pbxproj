@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C1BF368C27BEE52600EFEF6E /* EssentialFeed.docc in Sources */ = {isa = PBXBuildFile; fileRef = C1BF368B27BEE52600EFEF6E /* EssentialFeed.docc */; };
 		C1BF369227BEE52600EFEF6E /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1BF368727BEE52600EFEF6E /* EssentialFeed.framework */; };
-		C1BF369827BEE52600EFEF6E /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = C1BF368A27BEE52600EFEF6E /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1BF36A227BEE58800EFEF6E /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF36A127BEE58800EFEF6E /* FeedItem.swift */; };
 		C1BF36A427BEE65600EFEF6E /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF36A327BEE65600EFEF6E /* FeedLoader.swift */; };
 		C1BF36AC27C3A9D500EFEF6E /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF36AB27C3A9D500EFEF6E /* RemoteFeedLoaderTests.swift */; };
+		C1BF36AF27C404FD00EFEF6E /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF36AE27C404FD00EFEF6E /* RemoteFeedLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,12 +26,11 @@
 
 /* Begin PBXFileReference section */
 		C1BF368727BEE52600EFEF6E /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1BF368A27BEE52600EFEF6E /* EssentialFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed.h; sourceTree = "<group>"; };
-		C1BF368B27BEE52600EFEF6E /* EssentialFeed.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeed.docc; sourceTree = "<group>"; };
 		C1BF369127BEE52600EFEF6E /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1BF36A127BEE58800EFEF6E /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		C1BF36A327BEE65600EFEF6E /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		C1BF36AB27C3A9D500EFEF6E /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
+		C1BF36AE27C404FD00EFEF6E /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +73,8 @@
 		C1BF368927BEE52600EFEF6E /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
-				C1BF368A27BEE52600EFEF6E /* EssentialFeed.h */,
-				C1BF368B27BEE52600EFEF6E /* EssentialFeed.docc */,
 				C1BF36A627BEE7EC00EFEF6E /* Feed Feature */,
+				C1BF36AD27C404D600EFEF6E /* Feed API */,
 			);
 			path = EssentialFeed;
 			sourceTree = "<group>";
@@ -99,6 +96,14 @@
 			path = "Feed Feature";
 			sourceTree = "<group>";
 		};
+		C1BF36AD27C404D600EFEF6E /* Feed API */ = {
+			isa = PBXGroup;
+			children = (
+				C1BF36AE27C404FD00EFEF6E /* RemoteFeedLoader.swift */,
+			);
+			path = "Feed API";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -106,7 +111,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1BF369827BEE52600EFEF6E /* EssentialFeed.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,8 +214,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1BF36A427BEE65600EFEF6E /* FeedLoader.swift in Sources */,
+				C1BF36AF27C404FD00EFEF6E /* RemoteFeedLoader.swift in Sources */,
 				C1BF36A227BEE58800EFEF6E /* FeedItem.swift in Sources */,
-				C1BF368C27BEE52600EFEF6E /* EssentialFeed.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
