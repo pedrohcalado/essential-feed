@@ -13,6 +13,7 @@
 		C1BF36AC27C3A9D500EFEF6E /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF36AB27C3A9D500EFEF6E /* RemoteFeedLoaderTests.swift */; };
 		C1BF36AF27C404FD00EFEF6E /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF36AE27C404FD00EFEF6E /* RemoteFeedLoader.swift */; };
 		C1D6EAB127F7021100F520AB /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D6EAB027F7021100F520AB /* HTTPClient.swift */; };
+		C1D6EAB327F7048C00F520AB /* FeedItemMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D6EAB227F7048C00F520AB /* FeedItemMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		C1BF36AB27C3A9D500EFEF6E /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 		C1BF36AE27C404FD00EFEF6E /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		C1D6EAB027F7021100F520AB /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		C1D6EAB227F7048C00F520AB /* FeedItemMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				C1BF36AE27C404FD00EFEF6E /* RemoteFeedLoader.swift */,
+				C1D6EAB227F7048C00F520AB /* FeedItemMapper.swift */,
 				C1D6EAB027F7021100F520AB /* HTTPClient.swift */,
 			);
 			path = "Feed API";
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1BF36A427BEE65600EFEF6E /* FeedLoader.swift in Sources */,
+				C1D6EAB327F7048C00F520AB /* FeedItemMapper.swift in Sources */,
 				C1BF36AF27C404FD00EFEF6E /* RemoteFeedLoader.swift in Sources */,
 				C1D6EAB127F7021100F520AB /* HTTPClient.swift in Sources */,
 				C1BF36A227BEE58800EFEF6E /* FeedItem.swift in Sources */,
