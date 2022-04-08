@@ -38,7 +38,7 @@ class RemoteFeedLoaderTests: XCTestCase {
     func test_load_deliversErrorOnClientError() {
         let (sut, client) = makeSUT()
         
-        expect(sut, toCompleteWith: .failure(.connectivity), when: {
+        expect(sut, toCompleteWith: .failure(RemoteFeedLoader.Error.connectivity), when: {
             let clientError = NSError(domain: "Test", code: 0)
             client.complete(with: clientError)
         })
@@ -49,7 +49,7 @@ class RemoteFeedLoaderTests: XCTestCase {
         let samples = [199, 201, 300, 400, 500]
         
         samples.enumerated().forEach { index, code in
-            expect(sut, toCompleteWith: .failure(.invalidData), when: {
+            expect(sut, toCompleteWith: .failure(RemoteFeedLoader.Error.invalidData), when: {
                 let json = makeItemsJSON([])
                 client.complete(withStatusCode: code, data: json, at: index)
             })
@@ -60,7 +60,7 @@ class RemoteFeedLoaderTests: XCTestCase {
     func test_load_deliversErrorOn200HTTPResponseWithInvalidJSON() {
         let (sut, client) = makeSUT()
         
-        expect(sut, toCompleteWith: .failure(.invalidData), when: {
+        expect(sut, toCompleteWith: .failure(RemoteFeedLoader.Error.invalidData), when: {
             let invalidJSON = Data("Invalid JSON".utf8)
             client.complete(withStatusCode: 200, data: invalidJSON)
         })
@@ -149,7 +149,7 @@ class RemoteFeedLoaderTests: XCTestCase {
             switch(receivedResult, expectedResult) {
             case let (.success(receivedResult), .success(expectedResult)):
                 XCTAssertEqual(receivedResult, expectedResult, file: file, line: line)
-            case let (.failure(receivedError), .failure(expectedError)):
+            case let (.failure(receivedError as RemoteFeedLoader.Error), .failure(expectedError as RemoteFeedLoader.Error)):
                 XCTAssertEqual(receivedError, expectedError, file: file, line: line)
             default:
                 XCTFail("Expected result \(expectedResult) got \(receivedResult) instead", file: file, line: line)
