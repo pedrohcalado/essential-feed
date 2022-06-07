@@ -110,20 +110,14 @@ class RemoteFeedLoaderTests: XCTestCase {
         let client = HTTPClientSpy()
         let sut = RemoteFeedLoader(url: url, client: client)
 
-        checkForMemoryLeaks(instance: sut, file: file, line: line)
-        checkForMemoryLeaks(instance: client, file: file, line: line)
+        trackForMemoryLeaks(instance: sut, file: file, line: line)
+        trackForMemoryLeaks(instance: client, file: file, line: line)
 
         return (sut, client)
     }
     
     private func failure(_ error: RemoteFeedLoader.Error) -> RemoteFeedLoader.Result {
         return .failure(error)
-    }
-    
-    private func checkForMemoryLeaks(instance: AnyObject, file: StaticString = #filePath, line: UInt = #line) {
-        addTeardownBlock { [weak instance] in
-            XCTAssertNil(instance, "Instance should have been dealocated. Potential memory leak.", file: file, line: line)
-        }
     }
     
     private func makeItem(id: UUID, description: String?, location: String?, imageURL: URL) -> (model: FeedItem, json: [String: Any]) {
