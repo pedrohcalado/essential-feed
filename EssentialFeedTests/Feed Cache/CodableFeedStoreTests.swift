@@ -25,7 +25,7 @@ class CodableFeedStoreTests: XCTestCase {
             case .empty:
                 break
             default:
-                XCTFail("Expected empty result gor \(result)")
+                XCTFail("Expected empty result got \(result)")
             }
             exp.fulfill()
         }
