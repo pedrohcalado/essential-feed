@@ -34,7 +34,7 @@
             let context = self.context
             context.perform {
                 do {
-                    let managedCache = ManagedCache(context: context)
+                    let managedCache = try ManagedCache.newUniqueInstance(in: context)
                     managedCache.timestamp = timestamp
                     managedCache.feed = ManagedFeedImage.images(from: feed, in: context)
                     try context.save()
@@ -94,6 +94,11 @@
             let request = NSFetchRequest<ManagedCache>(entityName: entity().name!)
             request.returnsObjectsAsFaults = false
             return try context.fetch(request).first
+        }
+        
+        static func newUniqueInstance(in context: NSManagedObjectContext) throws -> ManagedCache {
+            try find(in: context).map(context.delete)
+            return ManagedCache(context: context)
         }
     }
 
