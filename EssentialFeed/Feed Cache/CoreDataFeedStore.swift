@@ -17,8 +17,7 @@
         }
 
         public func retrieve(completion: @escaping RetrievalCompletion) {
-            let context = self.context
-            context.perform {
+            perform { context in
                 do {
                     if let cache = try ManagedCache.find(in: context) {                        completion(.found(feed: cache.localFeed, timestamp: cache.timestamp))
                     } else {
@@ -31,8 +30,7 @@
         }
 
         public func insert(_ feed: [LocalFeedImage], timestamp: Date, completion: @escaping InsertionCompletion) {
-            let context = self.context
-            context.perform {
+            perform { context in
                 do {
                     let managedCache = try ManagedCache.newUniqueInstance(in: context)
                     managedCache.timestamp = timestamp
@@ -46,8 +44,7 @@
         }
         
         public func deleteCachedFeed(completion: @escaping DeletionCompletion) {
-            let context = self.context
-            context.perform {
+            perform { context in
                 do {
                     try ManagedCache.find(in: context).map(context.delete).map(context.save)
                     completion(nil)
@@ -55,6 +52,11 @@
                     completion(error)
                 }
             }
+        }
+        
+        private func perform(_ action: @escaping (NSManagedObjectContext) -> Void) {
+            let context = self.context
+            context.perform { action(context) }
         }
 
     }
