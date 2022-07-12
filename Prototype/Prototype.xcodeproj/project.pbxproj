@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		657C0B9B287D8D5800EE0283 /* FeedImageView+PrototypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657C0B9A287D8D5700EE0283 /* FeedImageView+PrototypeData.swift */; };
+		657C0B9D287D8E6500EE0283 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657C0B9C287D8E6500EE0283 /* FeedImageCell.swift */; };
 		65EC0712287C40A7000691A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EC0711287C40A7000691A5 /* AppDelegate.swift */; };
 		65EC0714287C40A7000691A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EC0713287C40A7000691A5 /* SceneDelegate.swift */; };
 		65EC0719287C40A7000691A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65EC0717287C40A7000691A5 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		657C0B9A287D8D5700EE0283 /* FeedImageView+PrototypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedImageView+PrototypeData.swift"; sourceTree = "<group>"; };
+		657C0B9C287D8E6500EE0283 /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 		65EC070E287C40A7000691A5 /* Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EC0711287C40A7000691A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65EC0713287C40A7000691A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				65EC071F287C40B3000691A5 /* Info.plist */,
 				65EC0725287D87D8000691A5 /* FeedViewController.swift */,
 				657C0B9A287D8D5700EE0283 /* FeedImageView+PrototypeData.swift */,
+				657C0B9C287D8E6500EE0283 /* FeedImageCell.swift */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				65EC0726287D87D8000691A5 /* FeedViewController.swift in Sources */,
 				65EC0714287C40A7000691A5 /* SceneDelegate.swift in Sources */,
 				657C0B9B287D8D5800EE0283 /* FeedImageView+PrototypeData.swift in Sources */,
+				657C0B9D287D8E6500EE0283 /* FeedImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
