@@ -42,6 +42,8 @@
 		65A450942932358C0084F70F /* UIButton+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A450932932358C0084F70F /* UIButton+TestHelpers.swift */; };
 		65A45096293236100084F70F /* UIControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A45095293236100084F70F /* UIControl+TestHelpers.swift */; };
 		65A4509B293237A50084F70F /* FeedViewController+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A4509A293237A50084F70F /* FeedViewController+TestHelpers.swift */; };
+		65A4509D2932381F0084F70F /* FeedImageCell+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A4509C2932381F0084F70F /* FeedImageCell+TestHelpers.swift */; };
+		65A4509F2932387C0084F70F /* FeedViewControllerTests+LoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A4509E2932387C0084F70F /* FeedViewControllerTests+LoaderSpy.swift */; };
 		65B0734928C663A400B7A061 /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B0734828C663A400B7A061 /* FeedViewControllerTests.swift */; };
 		65B0734B28C75BAE00B7A061 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1BF368727BEE52600EFEF6E /* EssentialFeed.framework */; platformFilter = ios; };
 		65B0734C28C75BAE00B7A061 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1BF368727BEE52600EFEF6E /* EssentialFeed.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -145,6 +147,8 @@
 		65A450932932358C0084F70F /* UIButton+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+TestHelpers.swift"; sourceTree = "<group>"; };
 		65A45095293236100084F70F /* UIControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+TestHelpers.swift"; sourceTree = "<group>"; };
 		65A4509A293237A50084F70F /* FeedViewController+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewController+TestHelpers.swift"; sourceTree = "<group>"; };
+		65A4509C2932381F0084F70F /* FeedImageCell+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedImageCell+TestHelpers.swift"; sourceTree = "<group>"; };
+		65A4509E2932387C0084F70F /* FeedViewControllerTests+LoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewControllerTests+LoaderSpy.swift"; sourceTree = "<group>"; };
 		65B0734828C663A400B7A061 /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
 		65B0735228C76EC800B7A061 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		65CC4E012862033800725797 /* LoadFeedFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
@@ -310,6 +314,8 @@
 				65A450932932358C0084F70F /* UIButton+TestHelpers.swift */,
 				65A45095293236100084F70F /* UIControl+TestHelpers.swift */,
 				65A4509A293237A50084F70F /* FeedViewController+TestHelpers.swift */,
+				65A4509C2932381F0084F70F /* FeedImageCell+TestHelpers.swift */,
+				65A4509E2932387C0084F70F /* FeedViewControllerTests+LoaderSpy.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -698,8 +704,10 @@
 				65A4509B293237A50084F70F /* FeedViewController+TestHelpers.swift in Sources */,
 				65B0735428C76F0B00B7A061 /* FeedViewController.swift in Sources */,
 				65A450942932358C0084F70F /* UIButton+TestHelpers.swift in Sources */,
+				65A4509D2932381F0084F70F /* FeedImageCell+TestHelpers.swift in Sources */,
 				65A45090293234E30084F70F /* UIImage+TestHelpers.swift in Sources */,
 				65B0735128C75DCF00B7A061 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				65A4509F2932387C0084F70F /* FeedViewControllerTests+LoaderSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
