@@ -23,6 +23,8 @@
 		65315425286CC2D9009F62E2 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC4E0A28648C7C00725797 /* SharedTestHelpers.swift */; };
 		65329BB72940B53E00C613E4 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65329BB62940B53E00C613E4 /* FeedViewModel.swift */; };
 		65329BB82940B65100C613E4 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65329BB62940B53E00C613E4 /* FeedViewModel.swift */; };
+		65329BBA2940C6B600C613E4 /* FeedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65329BB92940C6B600C613E4 /* FeedImageViewModel.swift */; };
+		65329BBB2940C80500C613E4 /* FeedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65329BB92940C6B600C613E4 /* FeedImageViewModel.swift */; };
 		653780F22881854000EF2620 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 653780E82881853F00EF2620 /* EssentialFeediOS.framework */; };
 		6565D00B2844D5E4006573D2 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6565D00A2844D5E4006573D2 /* URLSessionHTTPClientTests.swift */; };
 		6565D00E284F777C006573D2 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6565D00D284F777C006573D2 /* XCTestCase+MemoryLeakTracking.swift */; };
@@ -139,6 +141,7 @@
 		65315419286CC025009F62E2 /* EssentialFeedCacheIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedCacheIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6531541B286CC025009F62E2 /* EssentialFeedCacheIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedCacheIntegrationTests.swift; sourceTree = "<group>"; };
 		65329BB62940B53E00C613E4 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		65329BB92940C6B600C613E4 /* FeedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageViewModel.swift; sourceTree = "<group>"; };
 		653780E82881853F00EF2620 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		653780F12881854000EF2620 /* EssentialFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6565D00A2844D5E4006573D2 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
@@ -266,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				65329BB62940B53E00C613E4 /* FeedViewModel.swift */,
+				65329BB92940C6B600C613E4 /* FeedImageViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -755,6 +759,7 @@
 				65A4508D293138790084F70F /* UIView+Shimmering.swift in Sources */,
 				65B0735328C76EC800B7A061 /* FeedViewController.swift in Sources */,
 				65841487292EBA0F0095A05C /* FeedImageCell.swift in Sources */,
+				65329BBA2940C6B600C613E4 /* FeedImageViewModel.swift in Sources */,
 				65A450AC2934C5490084F70F /* FeedImageCellController.swift in Sources */,
 				65329BB72940B53E00C613E4 /* FeedViewModel.swift in Sources */,
 				65A450B02934C91F0084F70F /* FeedUIComposer.swift in Sources */,
@@ -779,6 +784,7 @@
 				65A450AA29323F6E0084F70F /* FeedRefreshViewController.swift in Sources */,
 				65A450A729323C120084F70F /* FeedImageDataLoader.swift in Sources */,
 				65A4509D2932381F0084F70F /* FeedImageCell+TestHelpers.swift in Sources */,
+				65329BBB2940C80500C613E4 /* FeedImageViewModel.swift in Sources */,
 				65A45090293234E30084F70F /* UIImage+TestHelpers.swift in Sources */,
 				65B0735128C75DCF00B7A061 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				65A4509F2932387C0084F70F /* FeedViewControllerTests+LoaderSpy.swift in Sources */,
